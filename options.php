@@ -27,7 +27,7 @@ $aTabs = [
 ];
 
 $tabControl = new CAdminTabControl("tabControl", $aTabs);
-if ($request->isPost()) {
+if ($request->isPost() && check_bitrix_sessid()) {
     $arFields = $request->getPost('options');
     foreach ($arFields as $k => $arField) {
         Option::set($curModuleName, $k, $arField);

@@ -5,7 +5,7 @@ namespace ru51a4\contact;
 use Bitrix\Main\Config\Option;
 
 
-class Test
+class Contact
 {
 
     public static function get($key)

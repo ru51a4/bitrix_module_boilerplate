@@ -42,7 +42,6 @@ $tabControl->begin();
     action="<?= sprintf('%s?mid=%s&lang=%s', $request->getRequestedPage(), urlencode($mid), LANGUAGE_ID) ?>&<?= $tabControl->ActiveTabParam() ?>"
     enctype="multipart/form-data" name="editform" class="editform">
     <?php
-    echo bitrix_sessid_post();
     $tabControl->beginNextTab();
     ?>
 
